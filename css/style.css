@@ -13,6 +13,40 @@ body
     font-family: 'Poppins',sans-serif;
 }
 
+/* 将 header 元素设置为固定定位 */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8f2c24;
+    color: #fff;
+    padding: 10px;
+    z-index: 999; /* 将导航栏放在最上层 */
+}
+  
+  /* 设置导航链接样式 */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+  
+nav a:hover {
+    text-decoration: underline;
+}
+  
 section
 {
     position: relative;
@@ -35,16 +69,11 @@ section .bg
     pointer-events: none;
 }
 
-section .trees
+.intro
 {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 100;
-    pointer-events: none;
+    width: 400px;
+    height: 360px; 
+    overflow-x:hidden;
 }
 
 .login
@@ -74,6 +103,16 @@ section .trees
     margin-bottom: 10px;
 }
 
+.login h3
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #8f3d24;
+    margin-bottom: 10px;
+}
 
 
 .login .inputBox input
