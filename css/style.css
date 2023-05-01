@@ -1,0 +1,140 @@
+/* google front */
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); */
+@import './google-front.css';
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poppins',sans-serif;
+}
+
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+section .bg
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section .trees
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.login
+{
+    position: relative;
+    padding: 60px;
+    background-color: rgba(255, 255, 255, .25);
+    backdrop-filter: blur(15px);
+    width: 500px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    border-right-color: rgba(255, 255, 255, .5);
+    border-bottom-color: rgba(255, 255, 255, .5);
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.login h2
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #8f3d24;
+    margin-bottom: 10px;
+}
+
+
+
+.login .inputBox input
+{
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 1.25em;
+    color: #8f2c24;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.login .inputBox ::placeholder
+{
+    color: #8f2c24;
+}
+
+.login .inputBox #btn
+{
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: #8f2c24;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.login .inputBox #btn:hover
+{
+    background-color: #d64c42;
+}
+
+.login .group
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .group a
+{
+    font-size: 1.25em;
+    color: #942b24;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.login .group a:nth-child(2)
+{
+    text-decoration: underline;
+}
+
+.login .group div
+{
+    font-size: 1.25em;
+    color: #942b24;
+    font-weight: 500;
+}
